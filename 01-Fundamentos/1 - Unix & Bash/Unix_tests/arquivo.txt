@@ -1,1 +1,10 @@
-texto
+comandos unix e bash
+
+cd - trocar de diretorio/entrar em uma pasta
+ls - lista arquivos e diretórios
+ls -s -> lista tudo, inclusive os ocultos
+mkdir - cria um diretório
+mv - move ou renomeia
+cp - copia
+cat - exibe um arquivo
+grep - procura por palavras chaves
