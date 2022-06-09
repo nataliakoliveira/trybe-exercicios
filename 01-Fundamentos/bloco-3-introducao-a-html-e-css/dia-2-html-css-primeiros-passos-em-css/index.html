@@ -6,26 +6,40 @@
     <style>
         h1{
             color: orange;
-            width: 61px;
+            width: 65px;
+            font-family: sans-serif;
         }
+
         body{
-            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
         }
-      
+        p {
+            font-weight: 600;
+            font-size: 3em;
+        }
+
         .backgroundColor{
            background-color : blue;
         }
-        
+        li {
+           font-style:inherit;
+           line-height: 40px;
+           text-align: center;
+           text-decoration: line-through;
+        }
+        #amarelo {background-color: yellow;}
+        #vermelho {background-color: red;}
+        #marrom {background-color: brown;}
     </style>
   </head>
 
   <body>
       <h1>Exercícios 3.2</h1>
       <p class="backgroundColor">Qual é a sua cor favorita?</p>
-      <ul class="backgroundColor">
-          <li>Amarelo</li>
-          <li>Vermelho</li>
-          <li>Marrom</li>
+      <ul>
+          <li id="amarelo">Amarelo</li>
+          <li id="vermelho">Vermelho</li>
+          <li id="marrom">Marrom</li>
       </ul>
   </body>
 </html>
