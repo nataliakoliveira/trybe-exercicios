@@ -1,0 +1,24 @@
+h1, p {
+    text-align: center;
+}
+
+body {
+    background-color: bisque;
+}
+li:active{
+    color: green;
+    
+}
+
+li:hover {
+    background-color: white;
+     
+}
+
+li:active {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+li {
+    list-style: none;
+} 
