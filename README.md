@@ -5,13 +5,16 @@ Neste repositório constam todas as atividades de aprendizagem desenvolvidas por
 
 O programa conta com mais de 1.500 horas de aulas online, abordando Introdução ao Desenvolvimento de Software, Front-End, Back-End, Ciência da Computação, Engenharia de Software, Metodologias Ágeis e Habilidades Comportamentais.
 
-# Fundamentos do Desenvolvimento Web 
+# Fundamentos do Desenvolvimento Web :hourglass_flowing_sand: 
 
 # Bloco 1: Introdução - Unix & Bash
 
  1-3: Fundamentos do Desenvolvimento Web
+ 
  1-3: Introdução - Unix & Shell
+ 
  1-3: Unix & Bash - Part 1
+ 
  1-4: Unix & Bash - Part 2
  
 # Bloco 2: Git, GitHub e Internet
