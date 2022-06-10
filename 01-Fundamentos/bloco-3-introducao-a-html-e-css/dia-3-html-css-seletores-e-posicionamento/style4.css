@@ -1,0 +1,10 @@
+div:hover {
+  border: 5px solid yellow;
+}
+
+p:nth-child(1){
+  background-color: aqua;
+}
+p:nth-child(2n+1){
+  background-color: blue;
+}
