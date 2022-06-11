@@ -37,7 +37,8 @@ div:nth-of-type(2) > h3 {
 div:nth-of-type(3) > h3 {
   text-align: center;
   color: black;
-  font-size: xx-large;
+  font-size: 30px;
+  height: 50px;
   
 }
 div:nth-of-type(4) > h3 {
