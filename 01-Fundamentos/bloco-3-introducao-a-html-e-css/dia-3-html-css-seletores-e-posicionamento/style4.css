@@ -1,10 +1,53 @@
-div:hover {
-  border: 5px solid yellow;
+h1 {
+  text-align: center;
+  color: chocolate;
 }
 
-p:nth-child(1){
-  background-color: aqua;
+div:hover {
+  border: 5px solid rgb(14, 13, 13);
 }
-p:nth-child(2n+1){
+div:active{
+  color: rgb(252, 252, 252);
+}
+
+div:nth-of-type(1) {
   background-color: blue;
+}
+div:nth-of-type(2) {
+  background-color: orange;
+}
+div:nth-of-type(3) {
+  background-color: red;
+}
+div:nth-of-type(4) {
+  background-color: darkslategray;
+}
+div:nth-of-type(5) {
+  background-color: darkgray;
+}
+
+div:nth-of-type(1) > h3 {
+  text-align: center;
+  color: pink;
+}
+div:nth-of-type(2) > h3 {
+  text-align: center;
+  color: blue;
+}
+div:nth-of-type(3) > h3 {
+  text-align: center;
+  color: black;
+  font-size: xx-large;
+  
+}
+div:nth-of-type(4) > h3 {
+  text-align: center;
+  color: orange;
+}
+div:nth-of-type(5) > h3 {
+  text-align: center;
+  color: chartreuse;
+}
+div:nth-child(odd) {
+  font-style: italic;
 }
