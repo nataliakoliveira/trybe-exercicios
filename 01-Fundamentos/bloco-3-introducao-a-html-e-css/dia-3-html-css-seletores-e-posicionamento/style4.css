@@ -6,7 +6,7 @@ h1 {
 div:hover {
   border: 5px solid rgb(14, 13, 13);
 }
-div:active{
+div:active {
   color: rgb(252, 252, 252);
 }
 
@@ -39,7 +39,6 @@ div:nth-of-type(3) > h3 {
   color: black;
   font-size: 30px;
   height: 50px;
-  
 }
 div:nth-of-type(4) > h3 {
   text-align: center;
