@@ -1,0 +1,68 @@
+h1 {
+    text-align: center;
+  }
+
+  .first {
+    background-color: rgb(235, 200, 84);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 200px;
+    position: absolute;
+    left: 35%;
+    top: 100px;
+    z-index:1;
+  }
+
+  .second {
+    background-color: rgb(219, 219, 219);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 300px;
+    display: inline-block;
+    display: inline-block;
+    position: absolute;
+    top: 150px;
+    left: 40%;
+    z-index:2;
+  }
+
+  .third {
+    background-color: rgb(170, 142, 106);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 300px;
+    position: absolute;
+    top: 150px;
+    left: 24%;
+    z-index:3;
+  }
+
+
+ 
+  
+li {
+    display: inline-block;
+    margin-left: 10%;
+}
+  
+
+  h3{
+    text-align: center;
+  }
+
+  .premiacoes {
+    
+    position: relative;
+    top: 150px;
+    
+  }
+
+ ul li.descricao {
+    display: inline-block;
+    text-align: center;
+    margin-left: 34%;
+    margin-right: -34%;
+ }
