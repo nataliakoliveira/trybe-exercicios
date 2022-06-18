@@ -1,3 +1,60 @@
-ul li {
-    background-color: yellow;
+ol li {
+  background-color: yellow;
 }
+ol li:nth-child(2n) {
+  color: green;
+}
+ol li:nth-child(2n + 1) {
+  text-transform: uppercase;
+}
+
+h1,
+h2, h3 {
+  color: red;
+}
+h1,
+h2 italic {
+  font-size: 40px;
+  border: 1px solid black;
+}
+li{
+    font-size: 20px;
+}
+li em{
+    font-weight: bold;
+}
+ul.color li:nth-child(1){
+    color: blue;
+}
+ul.color li:nth-child(2){
+    color: blue;
+}
+ul.color li:nth-child(3){
+    color: blue;
+}
+ul.negrito li:hover:nth-child(1){
+    font-weight: bold;
+    background-color: orange;
+    color: orange;
+}
+ul.negrito li:hover:nth-child(2){
+    font-weight: bold;
+    background-color: green;
+    color: green;
+}
+ul.negrito li:hover:nth-child(3){
+    font-weight: bold;
+    background-color: black;
+    color: black;
+}
+ul.negrito li:hover:nth-child(4){
+    font-weight: bold;
+    background-color: yellow;
+    color: yellow;
+}
+ul.negrito li:hover:nth-child(5){
+    font-weight: bold;
+    background-color: green;
+    color: green;
+}
+
