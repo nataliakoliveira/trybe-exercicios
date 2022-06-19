@@ -5,46 +5,59 @@ body {
 h1{
     text-align: center;
 }
-
-.nav{
-    margin-left: 10%;
-    margin-right: 30%;
-}
-.fato {
+h2{
     margin-left: 400px;
 }
 
+.nav{
+    margin-left: 22%;
+    margin-right: 22%;
+    text-align: center;
+}
+.fato{
+    margin-left: 400px;
+    text-align: left;
+    }
+
 .barraLateral{
     color: #000;
-    font-size:90%;
-    background-color:#B09B71;
-    padding: 2px;
+    font-size:100%;
+    background-color:#EDDFB3;
+    padding: 5px;
     border: 1px solid #aaa;
-    width: 350px;
-    margin-left: 20%;
-    margin-top: -34.4%;
+    width: 380px;
+    margin-top: -55.6%;
     float: right;
     font-family: sans-serif;
     
     
 }
-.Topo{
-    
+h5{
+    text-align: justify;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0;
+    font-size:120%;;
+    background-color: #B09B71;
     text-align: center;
 }
 
 .section {
-
+    
     left: 60%;
     margin-left: 400px;
     margin-right: 400px;
     text-align: justify;
+   
+    
  
 }
 .img{
-margin-top: 5%;
+margin-top: -8%;
 margin-left: 15%;
-
+}
+.img-texto{
+    float: left;
 }
 
 .nomeCientifico{
@@ -53,22 +66,14 @@ margin-left: 15%;
     margin-top: -4%;
     font-style: italic;
 }
-.nomecientifico{
 
-
-}
 .classificacao{
 text-align: justify;
-margin-left: 30%;
+margin-left: 0%;
+margin-right: 0%;
 font-size:120%;;
 background-color: #B09B71;
+text-align: center;
 
 }
-ul{
-    text-align: justify;
-    margin-left: 35%;
-    text-indent: -4em;
-    font-family: 'Lato', sans-serif;
-    
-}
-.article
+
