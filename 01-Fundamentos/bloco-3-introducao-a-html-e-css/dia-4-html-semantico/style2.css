@@ -1,0 +1,74 @@
+body {
+    background-color: #EDDFB3;
+}
+
+h1{
+    text-align: center;
+}
+
+.nav{
+    margin-left: 10%;
+    margin-right: 30%;
+}
+.fato {
+    margin-left: 400px;
+}
+
+.barraLateral{
+    color: #000;
+    font-size:90%;
+    background-color:#B09B71;
+    padding: 2px;
+    border: 1px solid #aaa;
+    width: 350px;
+    margin-left: 20%;
+    margin-top: -34.4%;
+    float: right;
+    font-family: sans-serif;
+    
+    
+}
+.Topo{
+    
+    text-align: center;
+}
+
+.section {
+
+    left: 60%;
+    margin-left: 400px;
+    margin-right: 400px;
+    text-align: justify;
+ 
+}
+.img{
+margin-top: 5%;
+margin-left: 15%;
+
+}
+
+.nomeCientifico{
+    text-align: center;
+    margin-left: 7%;
+    margin-top: -4%;
+    font-style: italic;
+}
+.nomecientifico{
+
+
+}
+.classificacao{
+text-align: justify;
+margin-left: 30%;
+font-size:120%;;
+background-color: #B09B71;
+
+}
+ul{
+    text-align: justify;
+    margin-left: 35%;
+    text-indent: -4em;
+    font-family: 'Lato', sans-serif;
+    
+}
+.article
