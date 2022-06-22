@@ -56,3 +56,45 @@ if (soma == 180 && anguloValido) {
 } else {
     console.log("ângulo inválido");
 }
+/*<-----questão7------>*/
+porcentagem = 150;
+
+if(porcentagem < 0||porcentagem > 100){
+    console.log("Nota inválida!")
+}else if (porcentagem >= 90){
+    console.log("A");
+}else if (porcentagem >= 80){
+    console.log("A");
+}else if (porcentagem >= 70){
+    console.log("C");
+}else if (porcentagem >= 60){
+    console.log("D");
+}else if (porcentagem >= 50){
+    console.log("E");
+}else{
+    console.log("F");
+}
+/*<-----questão8------>*/
+const valor1 = 2;
+const valor2 = 2;
+const valor3 = 10;
+
+if(valor1 % 2 === 0||valor2 % 2 === 0||valor3 % 2 === 0){
+    console.log(true);
+}else{
+    console.log(false);
+}
+
+/*<-----questão9------>*/
+if(valor1 % 2 === 1||valor2 % 2 === 1||valor3 % 2 === 1){
+    console.log(true);
+}else{
+    console.log(false);
+}
+
+/*<-----questão10------>*/
+const custoProduto = 50;
+const valorVenda = 129;
+let valorCustoTotal = custoProduto * 1.2;
+let lucro = valorVenda-valorCustoTotal;
+console.log(lucro);
