@@ -75,19 +75,26 @@ if(porcentagem < 0||porcentagem > 100){
     console.log("F");
 }
 /*<-----questão8------>*/
-const num1 = 2;
-const num2 = 2;
-const num3 = 10;
+const valor1 = 2;
+const valor2 = 2;
+const valor3 = 10;
 
-if(num1 % 2 === 0||num2 % 2 === 0||num3 % 2 === 0){
+if(valor1 % 2 === 0||valor2 % 2 === 0||valor3 % 2 === 0){
     console.log(true);
 }else{
     console.log(false);
 }
 
 /*<-----questão9------>*/
-if(num1 % 2 === 1||num2 % 2 === 1||num3 % 2 === 1){
+if(valor1 % 2 === 1||valor2 % 2 === 1||valor3 % 2 === 1){
     console.log(true);
 }else{
     console.log(false);
 }
+
+/*<-----questão10------>*/
+const custoProduto = 50;
+const valorVenda = 129;
+let valorCustoTotal = custoProduto * 1.2;
+let lucro = valorVenda-valorCustoTotal;
+console.log(lucro);
