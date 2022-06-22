@@ -56,3 +56,38 @@ if (soma == 180 && anguloValido) {
 } else {
     console.log("ângulo inválido");
 }
+/*<-----questão7------>*/
+porcentagem = -1;
+
+if(porcentagem < 0||porcentagem > 100){
+    console.log("Nota inválida!")
+}else if (porcentagem >= 90){
+    console.log("A");
+}else if (porcentagem >= 80){
+    console.log("A");
+}else if (porcentagem >= 70){
+    console.log("C");
+}else if (porcentagem >= 60){
+    console.log("D");
+}else if (porcentagem >= 50){
+    console.log("E");
+}else{
+    console.log("F");
+}
+/*<-----questão8------>*/
+const num1 = 2;
+const num2 = 2;
+const num3 = 10;
+
+if(num1 % 2 === 0||num2 % 2 === 0||num3 % 2 === 0){
+    console.log(true);
+}else{
+    console.log(false);
+}
+
+/*<-----questão9------>*/
+if(num1 % 2 === 1||num2 % 2 === 1||num3 % 2 === 1){
+    console.log(true);
+}else{
+    console.log(false);
+}
