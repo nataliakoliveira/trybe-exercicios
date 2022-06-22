@@ -57,7 +57,7 @@ if (soma == 180 && anguloValido) {
     console.log("ângulo inválido");
 }
 /*<-----questão7------>*/
-porcentagem = -1;
+porcentagem = 150;
 
 if(porcentagem < 0||porcentagem > 100){
     console.log("Nota inválida!")
