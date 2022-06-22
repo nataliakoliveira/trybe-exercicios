@@ -56,6 +56,32 @@ if (soma == 180 && anguloValido) {
 } else {
     console.log("ângulo inválido");
 }
+/*<-----questão6------>*/
+let xadrez = "cavalo";
+
+    switch (xadrez.toLowerCase()) {
+        case "rainha":
+            console.log("mover-se pelas Colunas")
+            break;
+        case "cavalo":
+            console.log("mover-se em forma de L")
+                    break;
+        case "bispo":
+            console.log("mover-se pelas DiagonaIs")
+            break;
+        case "torre":
+            console.log("Mover-se pela Horizontal e Vertical")
+            break;
+        default:
+            console.log("Erro! Peça inválida.")
+            break;
+    }
+
+
+
+console.log("".toLowerCase());
+
+
 /*<-----questão7------>*/
 porcentagem = 150;
 
