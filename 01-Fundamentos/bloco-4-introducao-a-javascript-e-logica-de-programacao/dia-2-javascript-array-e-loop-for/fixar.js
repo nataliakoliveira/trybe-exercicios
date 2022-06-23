@@ -55,3 +55,9 @@ let groceryList = ["Arroz", "Feijão", "Alface", "Melancia"];
 for(index = 0; index<groceryList.length; index+=1){
     console.log(groceryList[index]);
 }
+console.log("");
+//----------------------------------------------------------
+let names = ["João","Maria", "Antonio", "Margarida"];  //imprimir os elementos da lista com o FOR/OF
+for(let list of names){
+    console.log(list);
+}
