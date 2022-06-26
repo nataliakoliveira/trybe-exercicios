@@ -39,4 +39,22 @@ for (let index = 1; index < array.length; index+=1){
 
 console.log(menorPalavra);
 console.log("");
-/*<-----questão3------>*/
+
+/*<-----questão4------>*/
+
+for (let numero = 2; numero <= 50; numero +=1){
+        let ehPrimo = true;
+        
+        for(let divisor = 2; divisor < numero; divisor+=1){
+            if(numero % divisor === 0){
+                ehPrimo = false;
+                break;
+            }
+            if (ehPrimo) console.log(numero);
+        }
+
+    }
+   
+
+
+
