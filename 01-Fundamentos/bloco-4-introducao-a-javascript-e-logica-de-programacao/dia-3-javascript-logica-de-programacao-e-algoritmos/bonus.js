@@ -21,7 +21,7 @@ let symbol2 = "*"; //simbolo que vamos usar para formar o tringulo
 let inputLine2 = ""; //vai nos ajudar a contar a quantidade de asteriscos impressos em uma linha.
 
 for(let lineIndex = 0; lineIndex <= size; lineIndex +=1){
-    console.log(inputLine2);
-    inputLine2 = inputLine2+symbol2;
+    console.log(inputLine2); //a cada interação do FOR iremos imprimir a variavel que criamos que vai armazenar quantos asteriscos a gente tem que imprimir por linha.
+    inputLine2 = inputLine2+symbol2; //atualizamos o valor dessa variavel acrescentando mais um simbolo a ela a cada interação.
 }
 
