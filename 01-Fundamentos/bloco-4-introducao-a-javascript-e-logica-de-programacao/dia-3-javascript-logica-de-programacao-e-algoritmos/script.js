@@ -50,9 +50,9 @@ for (let numero = 2; numero <= 50; numero +=1){
                 ehPrimo = false;
                 break;
             }
-            if (ehPrimo) console.log(numero);
+            
         }
-
+        if (ehPrimo) console.log(numero);
     }
    
 
