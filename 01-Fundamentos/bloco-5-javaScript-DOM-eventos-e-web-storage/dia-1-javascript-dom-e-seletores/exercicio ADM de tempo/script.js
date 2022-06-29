@@ -1,0 +1,9 @@
+console.log(document.getElementsByTagName("body")[0].style.backgroundColor = "#f0f2f5");
+console.log(document.querySelectorAll("#header-container")[0].style.backgroundColor = "#2fc18c");
+console.log(document.querySelectorAll(".emergency-tasks")[0].style.backgroundColor = "#f16a68");
+console.log(document.querySelectorAll(".no-emergency-tasks")[0].style.backgroundColor = "yellow");
+console.log(document.querySelectorAll(".emergency-tasks h3")[0].style.backgroundColor = "#704488");
+console.log(document.querySelectorAll(".emergency-tasks h3")[1].style.backgroundColor = "#704488");
+console.log(document.querySelectorAll(".no-emergency-tasks h3")[0].style.backgroundColor = "black");
+console.log(document.querySelectorAll(".no-emergency-tasks h3")[1].style.backgroundColor = "black");
+console.log(document.querySelectorAll("#footer-container")[0].style.backgroundColor = "#036b52");
