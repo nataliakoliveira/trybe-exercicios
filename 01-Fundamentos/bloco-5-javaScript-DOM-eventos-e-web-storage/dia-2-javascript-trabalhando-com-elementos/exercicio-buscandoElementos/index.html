@@ -1,19 +1,35 @@
-<!-- arquivo index.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>fixação</title>
 </head>
 <body>
-  <main>
-    <div id="start"></div>
-    nó
-    <p>elemento</p>
+  <main id="paiDoPai">
+    <section id="pai">
+      cores
+      <section id="primeiroFilho"></section>
+      <section id="elementoOndeVoceEsta">
+        <section id="primeiroFilhoDoFilho"></section>
+        <section id="segundoEUltimoFilhoDoFilho"></section>
+      </section>
+      Atenção!
+      <section id="terceiroFilho"></section>
+      <section id="quartoEUltimoFilho"></section>
+    </section>
   </main>
-  <script src="script.js"></script>
+  <script>
+    //exercicio1
+    document.getElementById('elementoOndeVoceEsta');
+    //exercicio2
+    console.log(document.getElementById('elementoOndeVoceEsta').parentNode.style.color = "red");
+    
+    //exercicio3
+
+  </script>
 </body>
 </html>
+
+
