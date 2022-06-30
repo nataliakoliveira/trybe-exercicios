@@ -37,12 +37,29 @@
     document.getElementById('elementoOndeVoceEsta').nextElementSibling;
     //exercicio8
     document.getElementById('pai').lastElementChild.previousElementSibling;
+
     //CRIE UM IRMAO PARA "elementoOndeVoceEsta"
     let pai= document.getElementById('pai');
     let irmaoElementoOndeVoceEsta= document.createElement('section');
     irmaoElementoOndeVoceEsta.id = ('irmaoElementoOndeVoceEsta');
     pai.appendChild(irmaoElementoOndeVoceEsta);
 
+    //CRIE UM FILHO PARA "elementoOndeVoceEsta"
+    let elementoOndeVoceEsta= document.getElementById('elementoOndeVoceEsta');
+    let filhoElementoOndeVoceEsta = document.createElement('section');
+    filhoElementoOndeVoceEsta.id = ('filhoElementoOndeVoceEsta');
+    elementoOndeVoceEsta.appendChild(filhoElementoOndeVoceEsta);
+
+    //CRIE UM FILHO PARA "primeiroFilhoDoFilho"
+    let primeiroFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho');
+    let filhoDoPrimeiroFilhoDoFilho = document.createElement('section');
+    filhoDoPrimeiroFilhoDoFilho.id = ('filhoDoPrimeiroFilhoDoFilho');
+    primeiroFilhoDoFilho.appendChild(filhoDoPrimeiroFilhoDoFilho);
+
+    //A PARTIR DESSE FILHO CRIADO, ACESSE "terceiroFilho"
+    document.getElementById('filhoDoPrimeiroFilhoDoFilho').parentElement.parentElement.parentElement.lastElementChild.previousElementSibling.previousElementSibling;
+    
+    
 
 
 
