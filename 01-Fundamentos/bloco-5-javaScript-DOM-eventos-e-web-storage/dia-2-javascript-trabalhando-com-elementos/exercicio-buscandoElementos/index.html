@@ -37,6 +37,14 @@
     document.getElementById('elementoOndeVoceEsta').nextElementSibling;
     //exercicio8
     document.getElementById('pai').lastElementChild.previousElementSibling;
+    //CRIE UM IRMAO PARA "elementoOndeVoceEsta"
+    let pai= document.getElementById('pai');
+    let irmaoElementoOndeVoceEsta= document.createElement('section');
+    irmaoElementoOndeVoceEsta.id = ('irmaoElementoOndeVoceEsta');
+    pai.appendChild(irmaoElementoOndeVoceEsta);
+
+
+
 
   </script>
 </body>
