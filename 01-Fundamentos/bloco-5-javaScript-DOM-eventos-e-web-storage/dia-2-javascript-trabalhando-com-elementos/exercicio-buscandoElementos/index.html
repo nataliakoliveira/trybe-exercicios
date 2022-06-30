@@ -9,7 +9,6 @@
 <body>
   <main id="paiDoPai">
     <section id="pai">
-      cores
       <section id="primeiroFilho"></section>
       <section id="elementoOndeVoceEsta">
         <section id="primeiroFilhoDoFilho"></section>
@@ -19,14 +18,20 @@
       <section id="terceiroFilho"></section>
       <section id="quartoEUltimoFilho"></section>
     </section>
+    testando se foi mudado a cor só no elemento pai
   </main>
   <script>
     //exercicio1
     document.getElementById('elementoOndeVoceEsta');
     //exercicio2
-    console.log(document.getElementById('elementoOndeVoceEsta').parentNode.style.color = "red");
-    
+    document.getElementById('elementoOndeVoceEsta').parentNode.style.color = "red";
     //exercicio3
+    document.getElementById('primeiroFilhoDoFilho').innerText = "Testando se a questão 3 deu certo"
+    //exercicio4
+    document.getElementById('pai').firstElementChild;
+    //exercicio5
+    document.getElementById('elementoOndeVoceEsta').firstElementChild;
+
 
   </script>
 </body>
