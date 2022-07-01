@@ -59,9 +59,18 @@
     //A PARTIR DESSE FILHO CRIADO, ACESSE "terceiroFilho"
     document.getElementById('filhoDoPrimeiroFilhoDoFilho').parentElement.parentElement.parentElement.lastElementChild.previousElementSibling.previousElementSibling;
     
-    
+    //remover todos os elementos filhos de paiDoPai exceto pai, elementoOndeVoceEsta e primeiroFilhoDoFilho"
+    let removerFilhosDoPai = document.getElementById('pai');
 
+    for (let index = removerFilhosPai.childNodes.length; index >= 0; index -= 1){
+      let filhos = removerFilhosDoPai[index];
 
+      if(filhos.id !== 'elementoOndeVoceEsta'){
+        filhos.remove();
+      }
+    }
+    let segundoEUltimoFilhoDoFilho = document.getElementById('segundoEUltimoFilhoDoFilho');
+    segundoEUltimoFilhoDoFilho.remove();
 
   </script>
 </body>
