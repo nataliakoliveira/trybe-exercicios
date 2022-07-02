@@ -65,14 +65,14 @@
     document.body.appendChild(h1);
 
     //exercicio2
-    const main = document.createElement("main");
-    main.className = "main-content";
-    document.body.appendChild(main);
+    const elementMain = document.createElement("main");
+    elementMain.className = "main-content";
+    document.body.appendChild(elementMain);
 
     //exercicio3
     const sectionCenter = document.createElement("section");
     sectionCenter.className = "center-content";
-    main.appendChild(sectionCenter);
+    elementMain.appendChild(sectionCenter);
 
     //exercicio4
     const p = document.createElement("p");
@@ -82,13 +82,13 @@
 
     //exercicio5
     const sectionLeft = document.createElement("section");
-    sectionLeft.className = "left-content";
-    main.appendChild(sectionCenter);
+    sectionLeft.classList = "left-content";
+    elementMain.appendChild(sectionCenter);
 
     //exercicio6
     const sectionRight = document.createElement("section");
     sectionRight.className = "right-content";
-    main.appendChild(sectionRight);
+    elementMain.appendChild(sectionRight);
 
     //exercicio7
     const imgSmall = document.createElement("img");
@@ -121,7 +121,7 @@
     for (let index = 1; index <= 3; index +=1){
       const tagh3 = document.createElement('h3');
       tagh3.innerText = 'Testando tag' + index;
-      main.appendChild(tagh3)
+      elementMain.appendChild(tagh3)
     }
     //---------------------FAZENDO ALTERAÇÕES E REMOÇÕES-----------------------------------
     //exercicio1
@@ -131,9 +131,19 @@
     //exercicio2
     const tagh3 = document.getElementsByTagName('h3');
     for (index = 0; index < tagh3; index += 1){
-      tagh3[index].className = 'description'
+      tagh3[index].className = 'description';
     }
-    tagh3.className = ''
+    
+    //exercicio3
+    const leftContent= document.getElementsByClassName('left-content')[0];
+    sectionLeft.removeChild(leftContent);
+
+    //exercicio4
+    const rightContent = document.getElementsByClassName('right-content')[0];
+
+
+
+    
   </script>
 </body>
 
