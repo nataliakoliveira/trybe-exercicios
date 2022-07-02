@@ -123,6 +123,17 @@
       tagh3.innerText = 'Testando tag' + index;
       main.appendChild(tagh3)
     }
+    //---------------------FAZENDO ALTERAÇÕES E REMOÇÕES-----------------------------------
+    //exercicio1
+    const title = document.querySelector('h1')
+    h1.className = 'title';
+
+    //exercicio2
+    const tagh3 = document.getElementsByTagName('h3');
+    for (index = 0; index < tagh3; index += 1){
+      tagh3[index].className = 'description'
+    }
+    tagh3.className = ''
   </script>
 </body>
 
