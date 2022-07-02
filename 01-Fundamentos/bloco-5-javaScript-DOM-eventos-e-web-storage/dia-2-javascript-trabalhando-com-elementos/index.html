@@ -60,9 +60,9 @@
 <body>
   <script>
     //exercicio1
-    const h1 = document.createElement("h1");
-    h1.innerText = "exercício 5.2 - JavaScript DOM";
-    document.body.appendChild(h1);
+    const h1Text = document.createElement("h1");
+    h1Text.innerText = "exercício 5.2 - JavaScript DOM";
+    document.body.appendChild(h1Text);
 
     //exercicio2
     const elementMain = document.createElement("main");
@@ -77,13 +77,13 @@
     //exercicio4
     const p = document.createElement("p");
     p.innerText =
-      "Estou aprendendo a utilizar o Dom e deixar minha página mais dinâmica";
+      "Estou aprendendo a utilizar o Dom";
     sectionCenter.appendChild(p);
 
     //exercicio5
     const sectionLeft = document.createElement("section");
-    sectionLeft.classList = "left-content";
-    elementMain.appendChild(sectionCenter);
+    sectionLeft.classList = 'left-content';
+    elementMain.appendChild(sectionLeft);
 
     //exercicio6
     const sectionRight = document.createElement("section");
@@ -126,7 +126,7 @@
     //---------------------FAZENDO ALTERAÇÕES E REMOÇÕES-----------------------------------
     //exercicio1
     const title = document.querySelector('h1')
-    h1.className = 'title';
+    h1Text.className = 'title';
 
     //exercicio2
     const tagh3 = document.getElementsByTagName('h3');
@@ -140,9 +140,16 @@
 
     //exercicio4
     const rightContent = document.getElementsByClassName('right-content')[0];
-    sectionRight.style.marginRight='auto';
+    rightContent.style.marginRight = 'auto';
 
+    //exercicio5
+    const centerContent = document.getElementsByClassName('center-content')[0];
+    centerContent.parentNode.style.backgroundcolor = 'green';
 
+    //exercicio6
+    const ul = document.getElementsByTagName('ul')[0];
+    ul.lastChild.remove();
+    ul.lastChild.remove();
     
   </script>
 </body>
