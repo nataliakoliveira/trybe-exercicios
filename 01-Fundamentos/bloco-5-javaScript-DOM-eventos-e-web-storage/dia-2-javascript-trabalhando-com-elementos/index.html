@@ -1,63 +1,129 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Exercício 5.2</title>
-    <style>
-      section {
-        border-color: black;
-        border-style: solid;
-      }
 
-      .title {
-        text-align: center;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Exercício 5.2</title>
+  <style>
+    section {
+      border-color: black;
+      border-style: solid;
+    }
 
-      .main-content {
-        background-color: yellow;
-      }
+    .title {
+      text-align: center;
+    }
 
-      .main-content .center-content {
-        background-color: red;
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-      }
+    .main-content {
+      background-color: yellow;
+    }
 
-      .main-content .center-content p {
-        font-style: italic;
-      }
+    .main-content .center-content {
+      background-color: red;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-      .main-content .left-content {
-        background-color: green;
-        width: 60%;
-        margin-left: 0;
-        margin-right: auto;
-      }
+    .main-content .center-content p {
+      font-style: italic;
+    }
 
-      .main-content .left-content .small-image {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 100%;
-      }
+    .main-content .left-content {
+      background-color: green;
+      width: 60%;
+      margin-left: 0;
+      margin-right: auto;
+    }
 
-      .main-content .right-content {
-        background-color: blue;
-        width: 60%;
-        margin-left: auto;
-        margin-right: 0;
-      }
+    .main-content .left-content .small-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 100%;
+    }
 
-      .main-content .description {
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <script>
-      // COLOQUE SEU CÓDIGO AQUI
-    </script>
-  </body>
+    .main-content .right-content {
+      background-color: blue;
+      width: 60%;
+      margin-left: auto;
+      margin-right: 0;
+    }
+
+    .main-content .description {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    //exercicio1
+    const h1 = document.createElement("h1");
+    h1.innerText = "exercício 5.2 - JavaScript DOM";
+    document.body.appendChild(h1);
+
+    //exercicio2
+    const main = document.createElement("main");
+    main.className = "main-content";
+    document.body.appendChild(main);
+
+    //exercicio3
+    const sectionCenter = document.createElement("section");
+    sectionCenter.className = "center-content";
+    main.appendChild(sectionCenter);
+
+    //exercicio4
+    const p = document.createElement("p");
+    p.innerText =
+      "Estou aprendendo a utilizar o Dom e deixar minha página mais dinâmica";
+    sectionCenter.appendChild(p);
+
+    //exercicio5
+    const sectionLeft = document.createElement("section");
+    sectionLeft.className = "left-content";
+    main.appendChild(sectionCenter);
+
+    //exercicio6
+    const sectionRight = document.createElement("section");
+    sectionRight.className = "right-content";
+    main.appendChild(sectionRight);
+
+    //exercicio7
+    const imgSmall = document.createElement("img");
+    imgSmall.className = "small-image";
+    imgSmall.setAttribute("src", "https://picsum.photos/200");
+    sectionCenter.appendChild(imgSmall);
+
+    //exercicio8
+    const listaUl = document.createElement('ul');
+    sectionRight.appendChild(listaUl);
+    const arrayLi = [
+      "um",
+      "dois",
+      "três",
+      "quatro",
+      "cinco",
+      "seis",
+      "sete",
+      "oito",
+      "nove",
+      "dez",
+    ]
+    for (let index in arrayLi) {
+      const listaLi = document.createElement('li');
+      listaUl.appendChild(listaLi);
+      
+      listaLi.innerText = ' '+ arrayLi[index];
+    }
+    //exercicio9
+    for (let index = 1; index <= 3; index +=1){
+      const tagh3 = document.createElement('h3');
+      tagh3.innerText = 'Testando tag' + index;
+      main.appendChild(tagh3)
+    }
+  </script>
+</body>
+
 </html>
