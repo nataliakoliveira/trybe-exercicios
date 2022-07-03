@@ -59,41 +59,41 @@
       
         //exercicio1
         function descricaoFuturo() {
-        let descricao = document.getElementsByTagName("p")[1];
+        let descricao = document.querySelector("p");
         descricao.innerText = "Quero estar empregada e ser uma boa desenvolvedora com muito conhecimento!";
       }
       descricaoFuturo();
 
         //exercicio2
       function mudarParaVerde() {
-        let yellow = document.getElementsByClassName("main-content")[0];
+        let yellow = document.querySelector(".main-content");
         yellow.style.background = "rgb(76,164,109)";
       }
       mudarParaVerde();
 
       //exercicio3
       function mudarParaWhite() {
-        let white = document.getElementsByClassName("center-content")[0];
+        let white = document.querySelector(".center-content");
         white.style.background = "white";
       }
       mudarParaWhite();
 
       //exercicio4
       function corrigirTexto (){
-        let titulo = document.getElementsByTagName('h1')[0];
+        let titulo = document.querySelector('h1');
         titulo.innerText = "Exercício 5.1 - JavaScript"
       }
       corrigirTexto();
 
       //exercicio5
       function modificarTag(){
-        let modificar = document.getElementsByTagName('p')[0];
+        let modificar = document.querySelector('p');
         modificar.innerHTML= modificar.innerHTML.toUpperCase();
       }
       modificarTag();
       //exercicio6
       function exibirConteudo(){
-        let exibicao = document.getElementsByTagName('p');
+        let exibicao = document.querySelector('p');
         for (let index = 0; index < exibicao.length; index+=1){
         console.log(exibicao[index].innerHTML);
       }
