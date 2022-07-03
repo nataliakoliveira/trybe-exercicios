@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fixação</title>
+</head>
+<body>
+  <main id="paiDoPai">
+    <section id="pai">
+      <section id="primeiroFilho"></section>
+      <section id="elementoOndeVoceEsta">
+        <section id="primeiroFilhoDoFilho"></section>
+        <section id="segundoEUltimoFilhoDoFilho"></section>
+      </section>
+      Atenção!
+      <section id="terceiroFilho"></section>
+      <section id="quartoEUltimoFilho"></section>
+    </section>
+    testando se foi mudado a cor só no elemento pai
+  </main>
+  <script>
+    //exercicio1
+    document.getElementById('elementoOndeVoceEsta');
+    //exercicio2
+    document.getElementById('elementoOndeVoceEsta').parentNode.style.color = "red";
+    //exercicio3
+    document.getElementById('primeiroFilhoDoFilho').innerText = "Testando se a questão 3 deu certo";
+    //exercicio4
+    document.getElementById('pai').firstElementChild;
+    //exercicio5
+    document.getElementById('elementoOndeVoceEsta').previousElementSibling;
+    //exercicio6
+    document.getElementById('elementoOndeVoceEsta').nextElementSibling.nextElementSibling.nextSibling;
+    //exercicio7
+    document.getElementById('elementoOndeVoceEsta').nextElementSibling;
+    //exercicio8
+    document.getElementById('pai').lastElementChild.previousElementSibling;
+
+    //CRIE UM IRMAO PARA "elementoOndeVoceEsta"
+    let pai= document.getElementById('pai');
+    let irmaoElementoOndeVoceEsta= document.createElement('section');
+    irmaoElementoOndeVoceEsta.id = ('irmaoElementoOndeVoceEsta');
+    pai.appendChild(irmaoElementoOndeVoceEsta);
+
+    //CRIE UM FILHO PARA "elementoOndeVoceEsta"
+    let elementoOndeVoceEsta= document.getElementById('elementoOndeVoceEsta');
+    let filhoElementoOndeVoceEsta = document.createElement('section');
+    filhoElementoOndeVoceEsta.id = ('filhoElementoOndeVoceEsta');
+    elementoOndeVoceEsta.appendChild(filhoElementoOndeVoceEsta);
+
+    //CRIE UM FILHO PARA "primeiroFilhoDoFilho"
+    let primeiroFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho');
+    let filhoDoPrimeiroFilhoDoFilho = document.createElement('section');
+    filhoDoPrimeiroFilhoDoFilho.id = ('filhoDoPrimeiroFilhoDoFilho');
+    primeiroFilhoDoFilho.appendChild(filhoDoPrimeiroFilhoDoFilho);
+
+    //A PARTIR DESSE FILHO CRIADO, ACESSE "terceiroFilho"
+    document.getElementById('filhoDoPrimeiroFilhoDoFilho').parentElement.parentElement.parentElement.lastElementChild.previousElementSibling.previousElementSibling;
+    
+    //remover todos os elementos filhos de paiDoPai exceto pai, elementoOndeVoceEsta e primeiroFilhoDoFilho"
+    let removerFilhosDoPai = document.getElementById('pai');
+
+    for (let index = removerFilhosPai.childNodes.length; index >= 0; index -= 1){
+      let filhos = removerFilhosDoPai[index];
+
+      if(filhos.id !== 'elementoOndeVoceEsta'){
+        filhos.remove();
+      }
+    }
+    let segundoEUltimoFilhoDoFilho = document.getElementById('segundoEUltimoFilhoDoFilho');
+    segundoEUltimoFilhoDoFilho.remove();
+
+  </script>
+</body>
+</html>
+
+
