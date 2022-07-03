@@ -1,10 +1,32 @@
-comandos unix e bash
+UNIX COMANDOS
 
-cd - trocar de diretorio/entrar em uma pasta
-ls - lista arquivos e diretórios
-ls -s -> lista tudo, inclusive os ocultos
-mkdir - cria um diretório
-mv - move ou renomeia
-cp - copia
-cat - exibe um arquivo
-grep - procura por palavras chaves
+ls → lista arquivos do diretório atual;
+	* → exibe todos diretórios e arquivos;
+cd → altera o diretório atual (change directory);
+cd . → exibe o diretório atual;
+cd .. → retorna para o diretório “pai”;
+mkdir → cria um novo diretório (make directory);
+pwd → exibe o diretório completo;
+touch → cria um novo arquivo;
+cp → copia o arquivo especificado;
+cat → lista os valores de um arquivo especificado;
+cat → cria um novo arquivo especificado;
+	> → cria e inclui valores a um arquivo;
+	>> → adiciona valores a um arquivo;
+sort → lista os valores em ordem alfabética;
+mv → move/renomeia um arquivo específico;
+rm → apaga um arquivo especifico;
+rmdir → apaga um diretório específico (apenas funciona se o diretório estiver vazio);
+rm -rf → apaga um diretório e todos os arquivos/diretórios existentes;
+less → exibe parte do conteúdo de um arquivo por página;
+	/nome_do_valor → exibe todo o conteúdo da busca “nome_do_valor”;
+head → mostra os dez primeiros valores de um arquivo;
+tail → mostra os dez últimos valores de um arquivo;
+grep → faz uma busca de um valor especificado dentro de um arquivo;
+	-i → ignora case sensitive no resultado da busca;
+	-v → exibe todos os valores que não correspondem com a busca;
+	-n → exibe a linha do valor da busca dentro do arquivo;
+	-c → exibe a quantidade de vezes que o valor é encontrado;
+wc → exibe a quantidade de linhas, palavras e caracteres de um arquivo;
+man → acessa ao manual de um comando específico;
+whatis → exibe o que um comando faz;
