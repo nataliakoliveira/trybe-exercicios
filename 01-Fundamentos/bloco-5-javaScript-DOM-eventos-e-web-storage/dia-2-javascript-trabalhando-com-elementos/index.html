@@ -60,9 +60,9 @@
 <body>
   <script>
     //exercicio1
-    const h1Text = document.createElement("h1");
-    h1Text.innerText = "exercício 5.2 - JavaScript DOM";
-    document.body.appendChild(h1Text);
+    const h1 = document.createElement("h1");
+    h1.innerText = "exercício 5.2 - JavaScript DOM";
+    document.body.appendChild(h1);
 
     //exercicio2
     const elementMain = document.createElement("main");
@@ -70,15 +70,15 @@
     document.body.appendChild(elementMain);
 
     //exercicio3
-    const sectionCenter = document.createElement("section");
-    sectionCenter.className = "center-content";
-    elementMain.appendChild(sectionCenter);
+    const centerContent = document.createElement("section");
+    centerContent.className = "center-content";
+    elementMain.appendChild(centerContent);
 
     //exercicio4
     const p = document.createElement("p");
     p.innerText =
       "Estou aprendendo a utilizar o Dom";
-    sectionCenter.appendChild(p);
+    centerContent.appendChild(p);
 
     //exercicio5
     const sectionLeft = document.createElement("section");
@@ -91,10 +91,10 @@
     elementMain.appendChild(sectionRight);
 
     //exercicio7
-    const imgSmall = document.createElement("img");
-    imgSmall.className = "small-image";
-    imgSmall.setAttribute("src", "https://picsum.photos/200");
-    sectionCenter.appendChild(imgSmall);
+    const img = document.createElement("img");
+    img.classList = 'small-image';
+    img.setAttribute("src", "https://picsum.photos/200");
+    centerContent.appendChild(img);
 
     //exercicio8
     const listaUl = document.createElement('ul');
@@ -126,7 +126,7 @@
     //---------------------FAZENDO ALTERAÇÕES E REMOÇÕES-----------------------------------
     //exercicio1
     const title = document.querySelector('h1')
-    h1Text.className = 'title';
+    h1.className = 'title';
 
     //exercicio2
     const tagh3 = document.getElementsByTagName('h3');
@@ -143,8 +143,8 @@
     rightContent.style.marginRight = 'auto';
 
     //exercicio5
-    const centerContent = document.getElementsByClassName('center-content')[0];
-    centerContent.parentNode.style.backgroundcolor = 'green';
+    const paiCenterContent = document.getElementsByClassName('center-content')[0];
+    paiCenterContent.parentNode.style.backgroundcolor = 'green';
 
     //exercicio6
     const ul = document.getElementsByTagName('ul')[0];
