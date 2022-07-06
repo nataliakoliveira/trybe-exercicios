@@ -104,3 +104,20 @@ function mostrarSexta(fridaysArray) {
 )}
 let decemberFridays = [4,11,18,25];
 mostrarSexta(decemberDaysList);
+//----------------------------------------------------------------------
+//exercicio6
+function mouseTrue(){
+let daysOn = document.querySelector('#days');
+daysOn.addEventListener("mouseover", function(event){
+event.target.style.fontSize = '30px';
+})
+}
+mouseTrue();
+function mouseOff(){
+let daysOff = document.querySelector('#days');
+daysOff.addEventListener('mouseout', function(event){
+event.target.style.fontSize = '20px';
+})
+
+}
+mouseOff();
