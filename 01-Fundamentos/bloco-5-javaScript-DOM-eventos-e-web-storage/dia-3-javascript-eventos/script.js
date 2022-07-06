@@ -156,4 +156,17 @@ tarefas.appendChild(newTask); //adicionando newTask como filha da tasksContainer
 }
 legendaCollor('orange');
 //----------------------------------------------------------------------------
-
+//exercicio9
+function selecionarTarefa(){
+    let taskSelected = document.getElementsByClassName('task selected');
+    let tasksID = document.querySelector('#tasks');
+    tasksID.addEventListener('click', function(event){
+        if (taskSelected.length === 0) { //caso taskSelected retornar um array com nenhum item
+            event.target.className = 'task selected';
+        } else { //caso a primeira condição retornar falso
+            event.target.className = 'tasks';
+        }
+    }); 
+}
+selecionarTarefa();
+//----------------------------------------------------------------------------
