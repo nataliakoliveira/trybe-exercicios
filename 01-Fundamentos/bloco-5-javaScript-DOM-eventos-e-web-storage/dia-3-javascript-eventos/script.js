@@ -41,3 +41,16 @@ function createDaysOfTheWeek() {
     }
   }
   dias();
+  //---------------------------------------------------------------------
+  //exercicio2
+  function createHolidayButton(buttonName){
+    let buttonContainer = document.querySelector('.buttons-container'); //armazenar o seletor do container do botao
+    let newButton = document.createElement('button'); //criei um botao
+    let newButtonId = 'btn-holiday'; //armazenando valor da ID em uma variavel
+  
+    newButton.innerHTML = buttonName;
+    newButton.id = newButtonId;
+
+    buttonContainer.appendChild(newButton);
+}
+createHolidayButton('Feriados');
