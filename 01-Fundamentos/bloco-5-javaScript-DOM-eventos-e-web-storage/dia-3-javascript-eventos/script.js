@@ -86,3 +86,21 @@ function getButtonFriday(nomeBotao) {
     botaoContainer.appendChild(criarBotao); //adicionar botao como filho
 }
 getButtonFriday('Sexta-feira');
+//-------------------------------------------------------------------------
+//exercicio5
+function mostrarSexta(fridaysArray) {
+    let botaoSexta =document.querySelector('#btn-friday');
+    let fridays = document.getElementsByClassName('friday');
+    let newFriday = 'Sextou!!!'
+    botaoSexta.addEventListener('click', function(){ //add um escutador de eventos ao botao
+        for(let index = 0; index < fridays.length; index += 1){ //loop para verificar os elementos com classe sexta
+            if(fridays[index].innerHTML !== newFriday) {
+                fridays[index].innerHTML= newFriday;
+            } else {
+                fridays[index].innerHTML = fridaysArray[index];
+            }
+            }
+    }
+)}
+let decemberFridays = [4,11,18,25];
+mostrarSexta(decemberDaysList);
