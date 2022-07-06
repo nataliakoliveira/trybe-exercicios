@@ -25,7 +25,7 @@ function createDaysOfTheWeek() {
         dayItem.innerHTML = day;
 
         if (day === 24 || day === 31) {
-            dayItem.className = 'day Holiday' //atribui classe holiday ao li criado
+            dayItem.className = 'day holiday' //atribui classe holiday ao li criado
             getDaysList.appendChild(dayItem); //anexe o li criado como elemento filho do ul;
         }else if (day === 4 || day === 11 || day == 18 || day == 25) {
             dayItem.className = 'day friday';
@@ -48,9 +48,28 @@ function createDaysOfTheWeek() {
     let newButton = document.createElement('button'); //criei um botao
     let newButtonId = 'btn-holiday'; //armazenando valor da ID em uma variavel
   
-    newButton.innerHTML = buttonName;
+    newButton.innerHTML = buttonName; //o nome do botao é o mesmo passado como parametro
     newButton.id = newButtonId;
 
     buttonContainer.appendChild(newButton);
 }
 createHolidayButton('Feriados');
+//-----------------------------------------------------------------------
+//exercicio3
+function mostrarFeriados() {
+    let botaoFeriados = document.querySelector('#btn-holiday');
+    let allFeriados = document.querySelectorAll('.holiday');
+    let backgroundColor = 'rgb(238,238,238)';
+    let newColor = 'white';
+
+    botaoFeriados.addEventListener('click', function(){
+        for(let index = 0; index < allFeriados.length; index += 1){
+            if(allFeriados[index].style.backgroundColor === newColor) {
+                allFeriados[index].style.backgroundColor = backgroundColor;
+            }else{
+                allFeriados[index].style.backgroundColor = newColor;
+            }
+        }
+    })
+}
+mostrarFeriados();
