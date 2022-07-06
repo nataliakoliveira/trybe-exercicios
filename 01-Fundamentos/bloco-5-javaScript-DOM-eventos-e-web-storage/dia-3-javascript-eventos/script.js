@@ -146,5 +146,14 @@ tasksContainer.appendChild(taskName); //anexando task como filha de taskContaine
 }
 tarefaPersonalizada('projeto') //executando função
 //-------------------------------------------------------------------------
-
+//exercicio8
+function legendaCollor(color){
+let tarefas = document.querySelector('.my-tasks'); //recuperando elementos que tenham a classe 'my-tasks'
+let newTask = document.createElement('div'); //criaçao de nova div
+newTask.className = 'task'; //add className 'task' a div criada (newTask);
+newTask.style.backgroundColor = color //adicionando a cor recebida por parametro como brackground color
+tarefas.appendChild(newTask); //adicionando newTask como filha da tasksContainer
+}
+legendaCollor('orange');
+//----------------------------------------------------------------------------
 
