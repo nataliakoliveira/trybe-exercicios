@@ -107,9 +107,10 @@ mostrarSexta(decemberDaysList);
 //----------------------------------------------------------------------
 //exercicio6
 function mouseTrue(){
-let daysOn = document.querySelector('#days');
-daysOn.addEventListener("mouseover", function(event){
-event.target.style.fontSize = '30px';
+let daysOn = document.querySelector('#days'); //criei uma variavel que selecionou o id 'days'
+daysOn.addEventListener("mouseover", function(event){ //add eventlistener a variavel daysOn
+event.target.style.fontSize = '30px'; //aumentando fontSize
+event.target.style.fontWeight = '600'; //ele pega o evento alvo e altera o estilo de fonteWeight para 600;
 })
 }
 mouseTrue();
@@ -117,6 +118,7 @@ function mouseOff(){
 let daysOff = document.querySelector('#days');
 daysOff.addEventListener('mouseout', function(event){
 event.target.style.fontSize = '20px';
+event.target.style.fontWeight = '200'; //ele pega o evento alvo e altera o estilo de fontWeight para 200;
 })
 
 }
