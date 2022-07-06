@@ -60,7 +60,7 @@ function mostrarFeriados() {
     let botaoFeriados = document.querySelector('#btn-holiday');
     let allFeriados = document.querySelectorAll('.holiday');
     let backgroundColor = 'rgb(238,238,238)';
-    let newColor = 'white';
+    let newColor = 'yellow';
 
     botaoFeriados.addEventListener('click', function(){
         for(let index = 0; index < allFeriados.length; index += 1){
@@ -73,3 +73,16 @@ function mostrarFeriados() {
     })
 }
 mostrarFeriados();
+//-----------------------------------------------------------------------
+//exercicio4
+function getButtonFriday(nomeBotao) {
+    let botaoContainer = document.querySelector('.buttons-container');
+    let criarBotao = document.createElement('Button');
+    let criarBotaoID = 'btn-friday';
+
+    criarBotao.innerHTML = nomeBotao;
+    criarBotao.id = criarBotaoID;
+
+    botaoContainer.appendChild(criarBotao); //adicionar botao como filho
+}
+getButtonFriday('Sexta-feira');
