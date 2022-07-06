@@ -158,15 +158,33 @@ legendaCollor('orange');
 //----------------------------------------------------------------------------
 //exercicio9
 function selecionarTarefa(){
-    let taskSelected = document.getElementsByClassName('task selected');
-    let tasksID = document.querySelector('#tasks');
-    tasksID.addEventListener('click', function(event){
-        if (taskSelected.length === 0) { //caso taskSelected retornar um array com nenhum item
-            event.target.className = 'task selected';
+    let selectedTask = document.getElementsByClassName('task selected');
+    let myTasks = document.querySelector('.task');
+    myTasks.addEventListener('click', function(event){ //evento de click
+        if (selectedTask.length === 0) { //caso taskSelected retornar um array com nenhum item
+            event.target.className = 'task selected'; //altere a classe do target
         } else { //caso a primeira condição retornar falso
-            event.target.className = 'tasks';
+            event.target.className = 'task';
         }
     }); 
 }
 selecionarTarefa();
 //----------------------------------------------------------------------------
+//exercicio10
+function atribuirCor(){
+    let selectedTask = document.getElementsByClassName('task selected'); //retorna um array com todos os elementos com a classe task selected
+    let days = document.querySelector('#days'); //seleciona a primeira ul com id "days"
+    let taskDiv = document.querySelector('.task'); //seleciona o primeiro elemento com a classe 'task'
+    let taskColor = taskDiv.style.backgroundColor; //salva o background color da classe task na variavel 'taskcolor'
+
+    days.addEventListener('click',function(event){
+        let eventTargetColor = event.target.style.backgroundColor;
+        if (selectedTask.length > 0 && eventTargetColor !== taskColor) {
+            let color = selectedTask[0].style.backgroundColor; // Pega a cor de fundo do primeiro elemento salvo na variável "selectedTask" e salva na variável "color"
+            event.target.style.color = color; // atribui a cor salva na variável "color" ao evento alvo
+          } else if (eventTargetColor === taskColor) {
+            event.target.style.color = 'rgb(119,119,119)';  // Altera a cor de fundo do evento alvo para "rgb(119, 119, 119)"
+          }
+    })
+}
+atribuirCor();
