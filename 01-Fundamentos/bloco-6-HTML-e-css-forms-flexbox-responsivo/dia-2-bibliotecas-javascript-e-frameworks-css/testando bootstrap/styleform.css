@@ -1,0 +1,19 @@
+form{
+    margin-left: 40%;
+    margin-right: 10%;
+    background-color: grey;
+    padding-left: 1em;
+    padding-top: 1em;
+}
+h1{
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 7em;
+    margin-left: 40%;
+    margin-right: 10%;
+    background-color: gray;
+}
+body{
+    background-color: white;
+}
