@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <h1>Formulário TrybeTrip</h1>
@@ -42,7 +43,7 @@
 <br>
 <br>
 <p> <strong>Qual a melhor data para realizar sua viagem?</strong> </p>
-<input type="date" name="datapreferencial" id="dataViagem">
+<input type="text" name="datapreferencial" id="date" data-validate-field = 'date'>
 <br>
 <br>
 <p> <strong>Termos e Condições</strong> </p>
@@ -58,6 +59,9 @@
     <button type="reset" id="btnLimpar">Limpar informações</button>
 </form>
 </section>
-<script src="/script.js"></script>
+<script src="/form.js"></script>
+<script src="moment.js"></script>
+<script src="pikaday.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

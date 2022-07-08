@@ -17,3 +17,5 @@ form{
     background-color: lightsteelblue;
     padding: 3%;
 }
+
+@import './node_modules/pikaday/css/pikaday.css';
