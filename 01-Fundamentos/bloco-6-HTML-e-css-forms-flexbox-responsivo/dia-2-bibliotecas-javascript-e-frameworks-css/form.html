@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulário TrybeTrip</h1>
+    <section id="formulario">
+<form action="" method="get">
+
+<label for="nome-completo"> <strong>Nome Completo:</strong> 
+    <input type="text" name="Nome" id="nome-completo" minlength="10" maxlength="40" placeholder="Digite seu nome:">
+</label>
+<br>
+<br>
+<label for="input-email"> <strong>E-mail:</strong> 
+    <input type="text" name="email" id="input-email" minlength="10" maxlength="50" placeholder="Digite seu e-mail:">
+</label>
+<br>
+<br>
+<p> <strong> Destino Preferido:</strong></p>
+    <label for="destino-1">
+        <input type="radio" name="destino-preferido" id="destino-1" value="cidade" >Cidade
+    </label>
+    <label for="destino-2">
+        <input type="radio" name="destino-preferido" id="destino-2" value="campo" >Campo
+    </label>
+    <label for="destino-3">
+        <input type="radio" name="destino-preferido" id="destino-3" value="praia" >Praia
+    </label>
+    <label for="destino-4">
+        <input type="radio" name="destino-preferido" id="destino-4" value="montanha" >Montanhas
+<br>
+<br>
+<p> <strong>Por que você deveria ser a pessoa desenvolvedora a 
+    ganhar o concurso TrybeTrip?</strong> </p>
+<textarea name="" id="why" maxlength="500" minlength="30" cols="40" rows="10" placeholder="Descreva os motivos"></textarea>
+<br>
+<br>
+<p> <strong>Qual a melhor data para realizar sua viagem?</strong> </p>
+<input type="date" name="datapreferencial" id="dataViagem">
+<br>
+<br>
+<p> <strong>Termos e Condições</strong> </p>
+<label for="">
+    <input type="checkbox" name="receber-infos" id="receber-infos">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+    <br>
+    <input type="checkbox" name="concordar" id="concordarDivulgacao">Concordo que imagens das minhas férias poderão ser 
+    usadas na divulgação de concursos futuros.
+</label>
+<br>
+<br>
+    <button type="submit" id="btnEnviar" disabled>Enviar</button>
+    <button type="reset" id="btnLimpar">Limpar informações</button>
+</form>
+</section>
+<script src="/script.js"></script>
+</body>
+</html>

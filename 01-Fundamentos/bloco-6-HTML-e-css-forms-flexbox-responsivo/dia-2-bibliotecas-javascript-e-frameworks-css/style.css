@@ -1,0 +1,19 @@
+h1 {
+    margin: 1% 30%;
+    text-align: center;
+    background-color: lightsteelblue;
+    font-family: 'Open Sans', sans-serif;
+}
+section{
+    text-align: left;
+    font-size: 120%;
+}
+body{
+    background-color: white 
+}
+form{
+    
+    margin: 0% 30%;
+    background-color: lightsteelblue;
+    padding: 3%;
+}
