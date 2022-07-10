@@ -5,90 +5,55 @@ Neste repositório constam todas as atividades de aprendizagem desenvolvidas por
 
 O programa conta com mais de 1.500 horas de aulas online, abordando Introdução ao Desenvolvimento de Software, Front-End, Back-End, Ciência da Computação, Engenharia de Software, Metodologias Ágeis e Habilidades Comportamentais.
 
-# Fundamentos do Desenvolvimento Web :hourglass_flowing_sand: 
+##### Bloco 1: Introdução - Unix & Bash
 
-Bloco 1: Introdução - Unix & Bash
+- [ ] 1-3: _Fundamentos do Desenvolvimento Web_
+- [ ] 1-3: _Introdução - Unix & Shell_
+- [ ] 1-3: _Unix & Bash - Part 1_
+- [ ] 1-4: _Unix & Bash - Part 2_
 
- 1-1: Fundamentos do Desenvolvimento Web
+##### Bloco 2: Git, GitHub e Internet
 
- 1-2: Introdução - Unix & Shell
+- [ ] 2-1: _Git & GitHub - O que é e para que serve?_
+- [ ] 2-2: _Git & GitHub - Entendendo os comandos_
+- [ ] 2-3: _Internet - Entendendo como ela funciona_
 
- 1-3: Unix & Bash - Part 1
+##### Bloco 3: Introdução à HTML & CSS
 
- 1-4: Unix & Bash - Part 2
+- [ ] 3-1: _Introdução - HTML & CSS_
+- [ ] 3-1: _HTML & CSS - Estruturas de página_
+- [ ] 3-2: _HTML & CSS - Primeiros passos em CSS_
+- [ ] 3-3: _HTML & CSS - Seletores e posicionamento_
+- [ ] 3-4: _HTML Semântico_
+- [ ] 3-5: _[Projeto - Lessons Learned]()_
 
+##### Bloco 4: Introdução à JavaScript e Lógica de Programação
 
-Bloco 2: Git, GitHub e Internet
+- [ ] 4-1: _Introdução - JavaScript_
+- [ ] 4-1: _JavaScript - Primeiros passos_
+- [ ] 4-2: _JavaScript - Array e loop For_
+- [ ] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
+- [ ] 4-4: _JavaScript - Objetos e Funções_
+- [ ] 4-5: _[Projeto - Playground Functions]
 
- 2-1: Git & GitHub - O que é e para que serve?
+##### Bloco 5: JavaScrip: DOM, Eventos e Web Storage
 
- 2-2: Git & GitHub - Entendendo os comandos
+- [ ] 5-1: _JavaScript - DOM e seletores_
+- [ ] 5-2: _JavaScript - Trabalhando com elementos_
+- [ ] 5-3: _JavaScript - Eventos_
+- [ ] 5-4: _JavaScript - Web Storage_
+- [ ] 5-5: _Fundamentos - JavaScript - Projetos_
+- [ ] 5-5: _[Projeto - Arte com Pixels]()_
+- [ ] 5-6: _[Projeto - Lista de Tarefas]()_
+- [ ] 5-7: _[Projeto Bônus - Meme Generator]()_
+- [ ] 5-7: _[Projeto Bônus - Adivinhe a Cor]()_
+- [ ] 5-7: _[Projeto Bônus - Carta Misteriosa]()_
 
- 2-3: Internet - Entendendo como ela funciona
+##### Bloco 6: HTML & CSS: Forms, Flexbox e Responsivo
 
-
-Bloco 3: Introdução à HTML & CSS
-
- 3-1: Introdução - HTML & CSS
-
- 3-1: HTML & CSS - Estruturas de página
-
- 3-2: HTML & CSS - Primeiros passos em CSS
-
- 3-3: HTML & CSS - Seletores e posicionamento
-
- 3-4: HTML Semântico
-
- 3-5: Projeto - Lessons Learned
-
-
- Bloco 4: Introdução à JavaScript e Lógica de Programação
-
- 4-1: Introdução - JavaScript
-
- 4-1: JavaScript - Primeiros passos
-
- 4-2: JavaScript - Array e loop For
-
- 4-3: JavaScript - Lógica de Programação e Algoritmos
-
- 4-4: JavaScript - Objetos e Funções
-
- 4-5: Projeto - Playground Functions
-
-
-Bloco 5: JavaScrip: DOM, Eventos e Web Storage
-
- 5-1: JavaScript - DOM e seletores
-
- 5-2: JavaScript - Trabalhando com elementos
-
- 5-3: JavaScript - Eventos
-
- 5-4: JavaScript - Web Storage
-
- 5-5: Fundamentos - JavaScript - Projetos
-
- 5-5: Projeto - Arte com Pixels
-
- 5-6: Projeto - Lista de Tarefas
-
- 5-7: Projeto Bônus - Meme Generator
-
- 5-7: Projeto Bônus - Adivinhe a Cor
-
- 5-7: Projeto Bônus - Carta Misteriosa
-
-
-Bloco 6: HTML & CSS: Forms, Flexbox e Responsivo
-
- 6-1: HTML & CSS - Forms
-
- 6-2: Bibliotecas JavaScript e Frameworks CSS
-
- 6-3: CSS Flexbox - Part 1
-
- 6-4: CSS Flexbox - Part 2
-
- 6-6: Projeto - Trybewarts
- 
+- [ ] 6-1: _HTML & CSS - Forms_
+- [ ] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
+- [ ] 6-3: _CSS Flexbox - Part 1_
+- [ ] 6-4: _CSS Flexbox - Part 2_
+- [ ] 6-5: _CSS Responsivo - Mobile First_
+- [ ] 6-6: _[Projeto - Trybewarts]()_
