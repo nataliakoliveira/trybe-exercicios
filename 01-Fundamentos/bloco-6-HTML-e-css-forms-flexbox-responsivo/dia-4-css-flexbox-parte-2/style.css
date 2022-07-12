@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu';
+  }
+  
+  body {
+    background-color: rgb(247, 247, 247);
+    background-image: url(bg.jpg);
+  }
+  
+  .header-container {
+    background-color: #5C687C;
+    display: flex;
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    flex-basis: 268px;
+  }
+  
+  .menu-container {
+    display: flex;
+    flex-basis: 500px;
+    order: 1;
+    /* fazer item crescer enquanto houver espaço */
+    flex-grow: 1; 
+    align-self: center;
+  }
+  
+  .menu-container ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .menu-container li {
+    color: white;
+    font-weight: 500;
+    font-size: 1.3rem;
+    list-style: none;
+    margin-right: 10px;
+  }
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .movie-container {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    flex-grow: 10;
+  }
+  
+  .movie-container h2 {
+    margin: 40px 0;
+    text-align: center;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .card-container div {
+    align-items: center;
+    background-color: #5C687C;
+    border: black solid 1px;
+    display: flex;
+    flex-basis: 16%;
+    height: 150px;
+    justify-content: center;
+    margin: 10px;
+    flex-grow: 1;
+
+  }
+  
+  .aside-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 350px;
+    flex-grow: 1;
+    margin: 20px;
+    flex-basis: 350px;
+    justify-content: flex-start;
+    margin-top: 7%;
+    
+
+  }
+  
+  .aside-container h3, h4 {
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+    
+  }
+  
+  .aside-container p {
+    margin: 10px 0;
+    text-align: justify;
+    color: red;
+    
+  }
+  h2{
+    color: white;
+  }
+  .card-container div:nth-child(1){
+    background-image: url(images/jogosv.jpeg);
+  }
+  .card-container div:nth-child(2){
+    background-image: url(images/crepus.jpeg);
+  }
+  .card-container div:nth-child(3){
+    background-image: url(images/amopr.jpeg);
+  }
+  .card-container div:nth-child(4){
+    background-image: url(images/anjos.jpeg);
+  }
+  .card-container div:nth-child(5){
+    background-image: url(images/house.jpeg);
+  }
+  .card-container div:nth-child(6){
+    background-image: url(images/theboys.jpeg);
+  }
+  .card-container div:nth-child(7){
+    background-image: url(images/ippo.jpeg);
+  }
+  .card-container div:nth-child(8){
+    background-image: url(images/lacasa.jpeg);
+  }
+  .card-container div:nth-child(9){
+    background-image: url(images/castelvania.jpeg);
+  }
+  /* --------------------------------------- */
+  .maisAssistidos div:nth-child(1){
+    background-image: url(images/onepiece.jpeg);
+  }
+  .maisAssistidos div:nth-child(2){
+    background-image: url(images/atack.jpeg);
+  }
+  .maisAssistidos div:nth-child(3){
+    background-image: url(images/got.jpeg);
+  }
+  .maisAssistidos div:nth-child(4){
+    background-image: url(images/naruto.jpeg);
+  }
+  .maisAssistidos div:nth-child(5){
+    background-image: url(images/backlist.jpeg);
+  }
+  .maisAssistidos div:nth-child(6){
+    background-image: url(images/stranger.jpeg);
+  }
+  .maisAssistidos div:nth-child(7){
+    background-image: url(images/breaking.jpeg);
+  }
+  .maisAssistidos div:nth-child(8){
+    background-image: url(images/spy.jpeg);
+  }
+  .maisAssistidos div:nth-child(9){
+    background-image: url(images/demon.jpeg);
+  }
+  aside.aside-container{
+    background-image: url ;
+    
+  }
