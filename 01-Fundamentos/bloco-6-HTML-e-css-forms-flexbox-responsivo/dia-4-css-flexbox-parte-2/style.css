@@ -11,7 +11,7 @@
   }
   
   .header-container {
-    background-color: #5C687C;
+    background-image: url(images/terror2.jpg);
     display: flex;
   }
   
@@ -58,6 +58,7 @@
   .movie-container h2 {
     margin: 40px 0;
     text-align: center;
+    color: white;
   }
   
   .card-container {
@@ -89,6 +90,7 @@
     flex-basis: 350px;
     justify-content: flex-start;
     margin-top: 7%;
+
     
 
   }
@@ -96,14 +98,16 @@
   .aside-container h3, h4 {
     margin-bottom: 10px;
     text-align: center;
-    color: white;
+    color: red;
+    
     
   }
   
   .aside-container p {
     margin: 10px 0;
     text-align: justify;
-    color: red;
+    color:white;
+    
     
   }
   h2{
@@ -113,7 +117,7 @@
     background-image: url(images/jogosv.jpeg);
   }
   .card-container div:nth-child(2){
-    background-image: url(images/crepus.jpeg);
+    background-image: url(images/prison.jpeg);
   }
   .card-container div:nth-child(3){
     background-image: url(images/amopr.jpeg);
@@ -168,3 +172,10 @@
     background-image: url ;
     
   }
+  h3.notices{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+   
+  }
+ 
