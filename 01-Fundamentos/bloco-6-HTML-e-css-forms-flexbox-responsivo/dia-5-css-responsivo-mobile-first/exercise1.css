@@ -11,7 +11,7 @@
   }
   
   body {
-  font-size: 18px;
+  font-size: 100%;
   margin: 1em;
   }
   
@@ -45,4 +45,14 @@
   
   figcaption {
     font-size: .8em;
+  }
+  @media (min-width: 701px){
+    html{
+      background-color: khaki;
+      font-size: x-large;
+    }
+    figure{
+      width: 45%;
+      margin-right: 4.5%;
+    }
   }
