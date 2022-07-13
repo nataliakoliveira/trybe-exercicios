@@ -84,9 +84,10 @@ body {
   }
   body{
     padding: 0%;
+    text-align: justify;
   }
   img{
-    width: 90%;
+    width: 100%;
   }
   #navigation{
     padding-top: 20%;
@@ -102,6 +103,9 @@ body {
     flex-direction: column;
     text-decoration: none;
     justify-content: center;
+  }
+  footer#footer{
+    text-align: center;
   }
   
   }
