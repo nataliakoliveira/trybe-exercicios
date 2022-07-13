@@ -46,13 +46,18 @@
   figcaption {
     font-size: .8em;
   }
-  @media (min-width: 701px){
-    html{
+  @media screen and (min-width: 701px){
+    body{
       background-color: khaki;
-      font-size: x-large;
+      margin: 25px 6%;
     }
     figure{
       width: 45%;
       margin-right: 4.5%;
+    }
+  }
+  @media screen and (min-width: 1157px){
+    body{
+      background-color: green;
     }
   }
