@@ -53,3 +53,24 @@ function incrementClick() {
 function updateDisplay(val) {
     document.getElementById("counter-label").innerHTML = val;
 }
+//-------------------------------------------------------------------------------------------------------------------------------
+//exercicio4 parte II
+const substituir = (nome) => {
+  const frase = 'Tryber x aqui!'
+  const newFrase = frase.replace('x',nome)
+  return newFrase;
+}
+
+const minhasSkills =  (func) => {
+  const skills = ['Css', 'HTML', 'DOM'];
+  
+  let result = `${func}
+  Minhas três principais habilidades são:`;
+  skills.forEach((skill) => {
+    result = `${result}
+    * ${skill}`;
+  });
+  return result;
+};
+
+console.log(minhasSkills(substituir('Natália')));
