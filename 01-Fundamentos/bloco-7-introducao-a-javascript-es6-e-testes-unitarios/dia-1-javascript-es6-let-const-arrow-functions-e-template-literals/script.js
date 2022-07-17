@@ -25,3 +25,17 @@ console.log(`Os números ${oddsAndEvens} se encontram ordenados de forma crescen
 const fatorial = n => n > 1 ? n * fatorial(n - 1) : n
  
 console.log(fatorial(7));
+//------------------------------------------------------------------------------------------------------------------------------
+//exercicio2 parte II
+//String que será avaliada
+let string = "Natália foi no banheiro e não sabemos o que aconteceu";
+//Declaro a maior string vazia
+let big = "";
+//Transformo a string em uma lista com o split, separando por espaços em branco
+string.split(" ").forEach(word => {
+  if (word.trim().length > big.length) {
+    big = word.trim();
+  }
+});
+console.log(big);
+//-------------------------------------------------------------------------------------------------------------------------------
