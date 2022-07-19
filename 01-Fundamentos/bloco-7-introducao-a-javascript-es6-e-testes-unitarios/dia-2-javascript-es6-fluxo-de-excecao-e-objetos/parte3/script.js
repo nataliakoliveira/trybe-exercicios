@@ -27,4 +27,51 @@ const lesson1 = {
   console.log(lesson2);
   //----------------------------------------------------------
   //exercicio2
+  const objects = (obj) => Object.entries(obj);
   
+  console.log(objects(lesson1));
+  //---------------------------------------------
+  //exercicio3
+  const objLength = (obj) => Object.keys(obj).length;
+
+  console.log(objLength(lesson1));
+  //-------------------------------------------------------
+  //exercicio4
+  const valueObj = (obj) => Object.values(obj);
+
+  console.log(valueObj(lesson3));
+  //-----------------------------------------------
+  //exercicio5
+  const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
+
+  console.log(allLessons);
+  //------------------------------------------------------------------------
+  //exercicio6
+  const totalEstudantes = (obj) => {
+    let total = 0;
+
+    const array = Object.keys(obj); //pegando as chaves do objeto
+
+    for (index in array) { //iterar sobre o array de chaves
+total += obj[array[index]].numeroEstudantes;
+    }
+    return total;
+  };
+console.log(totalEstudantes(allLessons));
+//-------------------------------------------------------------------------
+//exercicio7
+const valuesObj = (obj, number) => Object.values(obj)[number];
+
+console.log(valuesObj(lesson1, 3));
+//-----------------------------------------------------------------
+//exercicio8
+const verifyPair = (obj, key, value) => {
+  const arr = Object.entries(obj);
+  let isEqual = false;
+  for (index in arr){
+    if(arr[index][0] === key && arr[index][1] === value)isEqual = true;
+  }
+  return isEqual
+};
+console.log(verifyPair(lesson3, 'turno', 'noite'));
+console.log(verifyPair(lesson3, 'materia', 'Maria Clara'));
