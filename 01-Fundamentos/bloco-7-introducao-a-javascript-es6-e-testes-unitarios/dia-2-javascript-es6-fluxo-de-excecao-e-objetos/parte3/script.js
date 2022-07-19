@@ -58,3 +58,8 @@ total += obj[array[index]].numeroEstudantes;
     return total;
   };
 console.log(totalEstudantes(allLessons));
+//-------------------------------------------------------------------------
+//exercicio7
+const valuesObj = (obj, number) => Object.values(obj)[number];
+
+console.log(valuesObj(lesson1, 3));
