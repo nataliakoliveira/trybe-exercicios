@@ -17,8 +17,8 @@ function sum() {
     } catch(error){
         document.getElementById('result').innerHTML = `Erro: ${error.message}`
     } finally {
-        document.getElementById('value1').value = '';
-        document.getElementById('value2').value = '';
+        document.getElementById('value1').value = ''; //apagar os valores do elemento que possui ID value
+        document.getElementById('value2').value = ''; //apagar os valores do elemento que possui ID value
     }
   }
 
