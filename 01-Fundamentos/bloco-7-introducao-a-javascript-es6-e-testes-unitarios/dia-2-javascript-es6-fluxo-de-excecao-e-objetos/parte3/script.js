@@ -27,4 +27,7 @@ const lesson1 = {
   console.log(lesson2);
   //----------------------------------------------------------
   //exercicio2
+  const objects = (obj) => Object.keys(obj);
+  
+  console.log(objects(lesson1));
   
