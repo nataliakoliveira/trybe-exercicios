@@ -35,3 +35,8 @@ const lesson1 = {
   const objLength = (obj) => Object.entries(obj).length;
 
   console.log(objLength(lesson1));
+  //-------------------------------------------------------
+  //exercicio4
+  const valueObj = (obj) => Object.values(obj);
+
+  console.log(valueObj(lesson3));
