@@ -45,3 +45,16 @@ const lesson1 = {
   const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
 
   console.log(allLessons);
+  //------------------------------------------------------------------------
+  //exercicio6
+  const totalEstudantes = (obj) => {
+    let total = 0;
+
+    const array = Object.keys(obj); //pegando as chaves do objeto
+
+    for (index in array) { //iterar sobre o array de chaves
+total += obj[array[index]].numeroEstudantes;
+    }
+    return total;
+  };
+console.log(totalEstudantes(allLessons));
