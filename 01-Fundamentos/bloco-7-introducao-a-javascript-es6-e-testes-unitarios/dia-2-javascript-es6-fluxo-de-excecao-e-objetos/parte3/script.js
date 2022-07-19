@@ -27,12 +27,12 @@ const lesson1 = {
   console.log(lesson2);
   //----------------------------------------------------------
   //exercicio2
-  const objects = (obj) => Object.keys(obj);
+  const objects = (obj) => Object.entries(obj);
   
   console.log(objects(lesson1));
   //---------------------------------------------
   //exercicio3
-  const objLength = (obj) => Object.entries(obj).length;
+  const objLength = (obj) => Object.keys(obj).length;
 
   console.log(objLength(lesson1));
   //-------------------------------------------------------
@@ -40,3 +40,8 @@ const lesson1 = {
   const valueObj = (obj) => Object.values(obj);
 
   console.log(valueObj(lesson3));
+  //-----------------------------------------------
+  //exercicio5
+  const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
+
+  console.log(allLessons);
