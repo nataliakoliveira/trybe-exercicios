@@ -41,26 +41,24 @@ A ausência de uma resposta não altera a pontuação (quando for "N.A");
 Uma resposta incorreta reduz a pontuação final em 0.5 ponto.
 Ao final, a HOF deve retornar o total de pontos obtidos através das respostas fornecidas pela pessoa estudante. Utilize os seguintes arrays: */
 
-const hof = (gabarito, studentAnswers, compareNotes) => {
+const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
 
-}
-const compareNotes = () => {
-  const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
-  const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
-
-  const newArray = []
-  for (let numeros of RIGHT_ANSWERS) {
-    for (numeros of STUDENT_ANSWERS) {
-      if (numeros === numeros) {
-        newArray.push = numeros;
-
-      }
-      console.log(newArray)
-    }
-
+const compareNotes = (right_answers, student_answers) => {
+  if(student_answers === right_answers){
+    return 1;
+  } if(student_answers === 'N.A'){
+    return 0;
   }
-
+  return -0.5;
 }
-compareNotes();
 
-
+const counterNotes = (right_answers, student_answers, callback) => {
+  contador = 0;
+  for(let index = 0; index < right_answers.length; index +=1) {
+    const counter  = callback(right_answers[index], student_answers[index])
+    contador += counter;
+  }
+  return `Pontuação obtida: ${contador} pontos`
+}
+console.log(counterNotes(RIGHT_ANSWERS, STUDENT_ANSWERS, compareNotes));
