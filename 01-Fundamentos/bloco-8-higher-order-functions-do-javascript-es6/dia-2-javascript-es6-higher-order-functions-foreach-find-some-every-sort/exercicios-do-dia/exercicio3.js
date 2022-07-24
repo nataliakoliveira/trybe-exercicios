@@ -61,13 +61,8 @@ const books = [
     },
   ];
   
-  /*  Adicione o código do exercício aqui:
-  2 - Retorne o nome do livro de menor nome. Dica: use a função forEach. */
-const smallerName = (array) => {
-    let initialSmallName = array[0].name
-    array.forEach((book) => {
-        if(initialSmallName.length > book.name.length) initialSmallName = book.name
-    });
-    return initialSmallName
-}
-console.log(smallerName(books))
+  // Adicione o código do exercício aqui:
+  //3 - Encontre o primeiro livro cujo nome possui 26 caracteres.
+  const encontraNomeDoLivro = (array,number) => array.find(book => book.name.length >= number)
+
+  console.log(encontraNomeDoLivro(books, 26));
