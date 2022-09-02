@@ -1,8 +1,9 @@
 import React from "react";
-import DadJoke from "./Components/DadJoke";
-import Joke from "./Components/Joke";
+import DadJoke from "./DadJoke";
+import Joke from "./Joke";
 
-function App() {
+class App extends React.Component {
+  render() {
   return (
     <div>
       <DadJoke />
@@ -10,6 +11,7 @@ function App() {
     </div>
 
   );
+  }
 }
 
 export default App;
