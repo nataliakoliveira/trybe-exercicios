@@ -44,6 +44,10 @@
         }
       };
 
+      const rootReducer = Redux.combineReducers({themeReducer, statusReducer});
+
+      const store = Redux.createStore(rootReducer)
+
       const themeButton = document.getElementById('toggle-theme');
       const statusButton = document.getElementById('toggle-status');
 
