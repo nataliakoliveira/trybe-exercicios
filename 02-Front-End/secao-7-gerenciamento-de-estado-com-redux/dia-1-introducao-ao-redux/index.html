@@ -58,6 +58,18 @@
       }
 
       const store = React.createStore(reducer);
+
+      const nextBtn = document.getElementById('next');
+      const previousBtn = document.getElementById('previous');
+
+      nextBtn.addEventListener('click', () => {
+        store.dispatch({type:"NEXT_COLOR"});
+      });
+
+      previousBtn.addEventListener('click', () => {
+        store.dispatch({type:"PREVIOUS_COLOR"});
+      });
+
     </script>
   </body>
 </html>
