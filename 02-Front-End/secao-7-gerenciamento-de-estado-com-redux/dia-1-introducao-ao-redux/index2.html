@@ -62,12 +62,29 @@
       const statusButton = document.getElementById('toggle-status');
 
       themeButton.addEventListener('click', () => {
-        // coloque o código aqui.
+        store.dispatch({type: "TOGGLE_THEME"});
       });
 
       statusButton.addEventListener('click', () => {
-        // coloque o código aqui.
+        store.dispatch({type: "TOGGLE_STATUS"});
       });
+
+      store.subscribe(() => {
+        const state = store.getState();
+        const body = document.querySelector('body');
+        const theme = document.getElementById('status');
+        
+        if(state.themeReducer.theme === 'light') {
+          body.style.backgroundColor = '#fff';
+          themeButton.innerText = 'Dark Mode';
+          body.style.color = '#333';
+        } else {
+          body.style.backgroundColor = '#333';
+          body.themeButton.innerText = 'Light Mode';
+          body.style.color = '#fff'
+        }
+      })
+
     </script>
   </body>
 </html>
