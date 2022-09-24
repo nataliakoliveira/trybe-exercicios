@@ -57,7 +57,7 @@
         }
       }
 
-      const store = React.createStore(reducer);
+      const store = Redux.createStore(reducer);
 
       const nextBtn = document.getElementById('next');
       const previousBtn = document.getElementById('previous');
@@ -68,6 +68,12 @@
 
       previousBtn.addEventListener('click', () => {
         store.dispatch({type:"PREVIOUS_COLOR"});
+      });
+
+      store.subscribe(() => {
+        const {colors, index} = store.getState();
+        document.getElementById('value').innerHTML = colors[index];
+        document.getElementById('container').style.backgroundColor = colors[index];
       });
 
     </script>
