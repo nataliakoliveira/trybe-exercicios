@@ -31,7 +31,7 @@
           case "TOGGLE_THEME":
             return {
               ...state,
-              theme: state.theme === 'dark' ? 'light' ? 'dark',
+              theme: state.theme === 'dark' ? 'light' : 'dark',
             };
           default:
             return state;
@@ -47,7 +47,7 @@
           case "TOGGLE_STATUS":
             return {
               ...state,
-              theme: state.status === 'offline' ? 'online' : 'offline',
+              status: state.status === 'offline' ? 'online' : 'offline',
             };
           default:
             return state;
@@ -56,7 +56,7 @@
 
       const rootReducer = Redux.combineReducers({themeReducer, statusReducer});
 
-      const store = Redux.createStore(rootReducer)
+      const store = Redux.createStore(rootReducer);
 
       const themeButton = document.getElementById('toggle-theme');
       const statusButton = document.getElementById('toggle-status');
@@ -69,21 +69,29 @@
         store.dispatch({type: "TOGGLE_STATUS"});
       });
 
-      store.subscribe(() => {
-        const state = store.getState();
-        const body = document.querySelector('body');
-        const theme = document.getElementById('status');
-        
-        if(state.themeReducer.theme === 'light') {
-          body.style.backgroundColor = '#fff';
-          themeButton.innerText = 'Dark Mode';
-          body.style.color = '#333';
-        } else {
-          body.style.backgroundColor = '#333';
-          body.themeButton.innerText = 'Light Mode';
-          body.style.color = '#fff'
-        }
-      })
+  store.subscribe(() => {
+  const state = store.getState();
+  const body = document.querySelector('body');
+  const status = document.getElementById('status');
+
+  if (state.themeReducer.theme === 'light') {
+    themeButton.innerText = 'Dark Mode';
+    body.style.backgroundColor = '#fff';
+    body.style.color = '#333';
+  } else {
+    themeButton.innerText = 'Light Mode';
+    body.style.backgroundColor = '#333';
+    body.style.color = '#fff';
+  }
+
+  if (state.statusReducer.status === 'online') {
+    statusButton.innerText = 'Ficar Offline';
+    status.innerText = 'Online';
+  } else {
+    statusButton.innerText = 'Ficar Online';
+    status.innerText = 'Offline';
+  }
+});
 
     </script>
   </body>
