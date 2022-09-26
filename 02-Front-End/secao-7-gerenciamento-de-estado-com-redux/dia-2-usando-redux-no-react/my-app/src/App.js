@@ -1,9 +1,14 @@
 // src/App.js
 import React from 'react';
+import InputsList from './InputsList';
+import List from './List';
 
 function App() {
   return (
-    <span> Hello, World </span>
+    <div>
+      <InputsList />
+      <List />
+    </div>
   );
 }
 
