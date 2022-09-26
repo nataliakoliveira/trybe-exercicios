@@ -57,3 +57,70 @@ O programa conta com mais de 1.500 horas de aulas online, abordando Introdução
 - [ ] 6-4: _CSS Flexbox - Part 2_
 - [ ] 6-5: _CSS Responsivo - Mobile First_
 - [ ] 6-6: _[Projeto - Trybewarts]()_
+##### Bloco 7: Introdução à JavaScript ES6 & Testes Unitários
+
+- [ ] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
+- [ ] 7-2: _JavaScript ES6 - Objects_
+- [ ] 7-3: _Primeiros passos em Jest_
+- [ ] 7-4: _[Projeto - JavaScript Testes Unitários]()_
+
+##### Bloco 8: Higher Order Functions do JavaScript ES6
+
+- [ ] 8-1: _JavaScript ES6 - Introdução à Higher Order Functions_
+- [ ] 8-2: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
+- [ ] 8-3: _JavaScript ES6 - Higher Order Functions - map e filter_
+- [ ] 8-4: _JavaScript ES6 - Higher Order Functions - reduce_
+- [ ] 8-5: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
+- [ ] 8-6: _[Projeto - Zoo functions](https://github.com/SrTonn/Projeto-Zoo-functions)_
+
+##### Bloco 9: JavaScript e Testes Assíncronos
+
+- [ ] 9-1: _JavaScript Assíncrono e Callbacks_
+- [ ] 9-2: _JavaScript Assíncrono - Fetch API e async/await_
+- [ ] 9-3: _Jest - Testes Assíncronos_
+- [ ] 9-4: _[Projeto - Carrinho de Compras](https://github.com/SrTonn/Project-Shopping-Cart)_
+
+<div align="center">
+  <h2>Desenvolvimento Front-end :hourglass_flowing_sand:</h2>
+</div>
+
+##### Bloco 10: Introdução à React
+
+- [ ] 10-1: _Introdução - Front-end_
+- [ ] 10-1: _Introdução - React_
+- [ ] 10-1: _'Hello, world!' no React!_
+- [ ] 10-2: _Componentes React_
+- [ ] 10-3: _[Projeto - Sistema Solar](https://github.com/SrTonn/Project-Solar-System)_
+
+##### Bloco 11: Componentes com Estado, Eventos e Formulários com React
+
+- [ ] 11-1: _Componentes com Estado e Eventos_
+- [ ] 11-2: _Formulários no React_
+- [ ] 11-3: _[Projeto - Tryunfo]()_
+
+##### Bloco 12: Ciclo de vida de componentes e React Router
+
+- [ ] 12-1: _Ciclo de vida de componentes_
+- [ ] 12-2: _React Router_
+- [ ] 12-3: _[Projeto - TrybeTunes]()_
+
+##### Bloco 13: Metodologias Ágeis
+
+- [ ] 13-1: _Metodologias Ágeis_
+- [ ] 13-2: _[Projeto - Frontend Online Store]()_
+
+##### Bloco 14: Testes automatizados com React Testing Library
+
+- [ ] 14-1: _RTL - Primeiros passos_
+- [ ] 14-2: _RTL - Mocks e Inputs_
+- [ ] 14-3: _RTL - Testando React Router_
+- [ ] 14-4: _[Projeto - Testes em React]()_
+
+##### Bloco 15: Gerenciamento de estado com Redux
+
+- [ ] 15-1: _Introdução ao Redux - O estado global da aplicação_
+- [ ] 15-2: _Usando o Redux no React_
+- [ ] 15-3: _Usando o Redux no React - Prática_
+- [ ] 15-4: _Usando o Redux no React - Actions Assíncronas_
+- [ ] 15-5: _Testes em React-Redux_
+- [ ] 15-6: _[Projeto - Trybe Wallet]()_
