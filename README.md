@@ -71,14 +71,14 @@ O programa conta com mais de 1.500 horas de aulas online, abordando Introdução
 - [ ] 8-3: _JavaScript ES6 - Higher Order Functions - map e filter_
 - [ ] 8-4: _JavaScript ES6 - Higher Order Functions - reduce_
 - [ ] 8-5: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
-- [ ] 8-6: _[Projeto - Zoo functions](https://github.com/SrTonn/Projeto-Zoo-functions)_
+- [ ] 8-6: _[Projeto - Zoo functions]()_
 
 ##### Bloco 9: JavaScript e Testes Assíncronos
 
 - [ ] 9-1: _JavaScript Assíncrono e Callbacks_
 - [ ] 9-2: _JavaScript Assíncrono - Fetch API e async/await_
 - [ ] 9-3: _Jest - Testes Assíncronos_
-- [ ] 9-4: _[Projeto - Carrinho de Compras](https://github.com/SrTonn/Project-Shopping-Cart)_
+- [ ] 9-4: _[Projeto - Carrinho de Compras]()_
 
 <div align="center">
   <h2>Desenvolvimento Front-end :hourglass_flowing_sand:</h2>
@@ -90,7 +90,7 @@ O programa conta com mais de 1.500 horas de aulas online, abordando Introdução
 - [ ] 10-1: _Introdução - React_
 - [ ] 10-1: _'Hello, world!' no React!_
 - [ ] 10-2: _Componentes React_
-- [ ] 10-3: _[Projeto - Sistema Solar](https://github.com/SrTonn/Project-Solar-System)_
+- [ ] 10-3: _[Projeto - Sistema Solar]()_
 
 ##### Bloco 11: Componentes com Estado, Eventos e Formulários com React
 
@@ -124,3 +124,36 @@ O programa conta com mais de 1.500 horas de aulas online, abordando Introdução
 - [ ] 15-4: _Usando o Redux no React - Actions Assíncronas_
 - [ ] 15-5: _Testes em React-Redux_
 - [ ] 15-6: _[Projeto - Trybe Wallet]()_
+##### Bloco 16: Projeto Jogo de Trivia
+
+- [ ] 16-1: _[Projeto - Jogo de Trivia]()_
+
+##### Bloco 17: Context API e React Hooks
+
+- [ ] 17-1: _Context API do React_
+- [ ] 17-2: _React Hooks - useState e useContext_
+- [ ] 17-3: _React Hooks - useEffect e Hooks customizados_
+- [ ] 17-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
+
+##### Bloco 18: Projeto App de Receitas
+
+- [ ] 18-1: _[Projeto - App de Receitas]()_
+
+<div align="center">
+  <h2>Desenvolvimento Back-end :hourglass_flowing_sand:</h2>
+</div>
+
+##### Seção 1: Docker: Utilizando Containers
+
+- [ ] 1-1: _Utilizando Containers - Docker_
+- [ ] 1-2: _Manipulando Imagens no Docker_
+- [ ] 1-3: _Orquestrando Containers com Docker Compose_
+- [ ] 1-4: _[Projeto - Docker Todo-List]()_
+
+##### Seção 2: Introdução á SQL
+
+- [ ] 2-1: _Banco de dados SQL_
+- [ ] 2-2: _Encontrando dados em um banco de dados_
+- [ ] 2-3: _Filtrando dados de forma específica_
+- [ ] 2-4: _Manipulando tabelas_
+- [ ] 2-5: _[Projeto - All For One]()_
