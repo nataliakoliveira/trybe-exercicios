@@ -15,7 +15,7 @@ function handleBmi(peso, altura) {
 }
 
 function main() {
-  const peso = readine.questionInt('What’ your weight? (kg)')
+  const peso = readine.questionFloat('What’ your weight? (kg)')
   const altura = readine.questionInt('What’ your height? (cm)')
 
   const bmi = handleBmi(peso, altura);
