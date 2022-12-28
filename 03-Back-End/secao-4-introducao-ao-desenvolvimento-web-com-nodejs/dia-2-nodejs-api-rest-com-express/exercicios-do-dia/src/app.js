@@ -42,7 +42,7 @@ const readFile = async () => {
   }
 }); */
 
-app.put('/movies/:id', async (req, res) => {
+/* app.put('/movies/:id', async (req, res) => {
   try {
     const { id } = req.params; // desestruturando o id do corpo da requisição
     const { movie, price } = req.body; // desestruturando o movie e price do corpo da requisição
@@ -54,6 +54,19 @@ app.put('/movies/:id', async (req, res) => {
     res.status(200).json(movies[index]); // utilizando o metodo status para enviar o codigo de resposta HTTP 200 e retornar o filme atualizado em formato json como resposta
   } catch (err) {
     res.status(500).send({ message: err.message });
+  }
+}); */
+
+app.delete('/movies/:id', async (req, res) => {
+  try {
+    const { id } = req.params; // desestruturando o id do parametro da requisição
+    const movies = await readFile(); // chamando a funcao de leitura do JSON
+    const filteredMovies = movies.findIndex((element) => element.id !== Number(id)); // filtrando o array pelos objetos que nao possuem o ud que o fornecido pelo parametro da requisicao
+    const updatedMovies = JSON.stringify(filteredMovies, null, 2);
+    await fs.writeFile(moviesPath, updatedMovies); // escrevendo no arquivo movies.json utilizando o modulo fs
+    res.status(204).end(); // utilizando o metodo status para enviar o codigo de HTTP 204 como resposta
+  } catch (error) {
+    res.status(500).send({ message: error.message });
   }
 });
 
