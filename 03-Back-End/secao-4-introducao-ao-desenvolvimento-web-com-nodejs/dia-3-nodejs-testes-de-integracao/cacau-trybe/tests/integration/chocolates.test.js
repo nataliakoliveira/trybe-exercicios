@@ -57,6 +57,38 @@ describe('Testando a API Cacau Trybe', function () {
   afterEach(function () {
     sinon.restore();
   });
+
+  describe('Usando o método GET em /chocolates/search', function () {
+    it('Retorna os chocolates que contém "Mo" no nome', async function () {
+      const response = await chai
+        .request(app)
+        .get('/chocolates/search?name=Mo');
+
+      expect(response.status).to.be.equal(200);
+      expect(response.body).to.deep.equal([
+        {
+          id: 3,
+          name: 'Mon Chéri',
+          brandId: 2,
+        },
+        {
+          id: 4,
+          name: 'Mounds',
+          brandId: 3,
+        },
+      ]);
+    });
+
+    it('Retorna um array vazio ao não encontrar nenhum chocolate', async function () {
+      const response = await chai
+        .request(app)
+        .get('/chocolates/search?name=ZZZ');
+
+      expect(response.status).to.be.equal(404);
+      expect(response.body).to.deep.equal([]);
+    });
+  });
+
   describe('Usando o método GET em /chocolates', function () {
     it('Retorna a lista completa de chocolates!', async function () {
       const output = [
@@ -131,36 +163,6 @@ describe('Testando a API Cacau Trybe', function () {
 
       expect(response.status).to.be.equal(200);
       expect(response.body).to.deep.equal({ totalChocolates: 4 });
-    });
-  });
-
-  describe('Usando o método GET em /chocolates/search', function () {
-    it('Retorna os chocolates que contém "MO" no nome', async function () {
-      const response = await chai
-        .request(app)
-        .get('/chocolates/search?name=Mo')
-
-      expect(response.status).to.be.equal(200);
-      expect(response.body).to.deep.equal([
-        {
-          id: 3,
-          name: 'Mon Chéri',
-          brandId: 2,
-        },
-        {
-          id: 4,
-          name: 'Mounds',
-          brandId: 3,
-        },
-      ]);
-    });
-    it('Retorna um array vazio ao não encontrar nenhum chocolate', async function() {
-      const response = await chai
-        .request(app)
-        .get('/chocolates/sarch?nam=ZZZ');
-
-        expect(response.status).to.be.equal(404);
-        expect(response.body).to.deep.equal([]);
     });
   });
 });

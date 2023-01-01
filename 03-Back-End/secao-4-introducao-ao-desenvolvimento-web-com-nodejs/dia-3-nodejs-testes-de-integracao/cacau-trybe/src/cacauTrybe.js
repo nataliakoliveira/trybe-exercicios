@@ -13,6 +13,12 @@ const readCacauTrybeFile = async () => {
   }
 };
 
+const findChocolateByName = async (query) => {
+  const cacauTrybe = await readCacauTrybeFile();
+  return cacauTrybe.chocolates
+    .filter((chocolate) => chocolate.name.toLowerCase().includes(query.toLowerCase()));
+}
+
 const getAllChocolates = async () => {
   const cacauTrybe = await readCacauTrybeFile();
   return cacauTrybe.chocolates;
@@ -34,4 +40,5 @@ module.exports = {
     getAllChocolates,
     getChocolateById,
     getChocolatesByBrand,
+    findChocolateByName
 };
