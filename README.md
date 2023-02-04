@@ -173,7 +173,34 @@ O programa conta com mais de 1.500 horas de aulas online, abordando Introdução
 
 - [x] 4-1: _Node.js: Runtime Assíncrono_
 - [x] 4-2: _Node.js: API REST com Express_
-- [ ] 4-3: _Node.js: Testes de Integração_
-- [ ] 4-4: _Node.js: Express e Middlewares_
-- [ ] 4-5: _Node.js: Express e MySQL_
-- [ ] 4-6: _[Projeto - Talker Manager]()_
+- [x] 4-3: _Node.js: Testes de Integração_
+- [x] 4-4: _Node.js: Express e Middlewares_
+- [x] 4-5: _Node.js: Express e MySQL_
+- [x] 4-6: _[Projeto - Talker Manager]()_
+
+##### Seção 5: Arquitetura de Software: Model, Service e Controller
+
+- [x] 5-1: _Arquitetura de Software: Camada Model_
+- [x] 5-2: _Arquitetura de Software: Camada Service_
+- [x] 5-3: _Arquitetura de Software: Camada Controller_
+- [x] 5-4: _Node.js: Express e Middlewares_
+- [x] 5-5: _[Projeto - Store Manager]()_
+
+##### Seção 6: Node.js: ORM e Autenticação
+
+- [x] 6-1: _ORM - Interface da aplicação com o banco de dados_
+- [x] 6-2: _ORM - Associations 1:1 e 1:N_
+- [x] 6-3: _ORM - Associations N:N e Transactions_
+- [x] 6-4: _JWT - (JSON Web Token)_
+- [x] 6-5: _[Projeto - API de Blogs]()_
+
+##### Seção 7: Masterclass: Implantação de Aplicações na Nuvem
+
+- [x] 7-1: _Infraestrutura: Deploy com Railway_
+
+##### Seção 8: Introdução a TypeScript
+
+- [x] 8-1: _ORM - Introdução ao TypeScript_
+- [x] 8-2: _ORM - Tipagem Estática e Generics_
+- [x] 8-3: _ORM - Express com TypeScript_
+- [x] 8-4: _[Projeto - TrybeSmith]()_
