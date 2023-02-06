@@ -203,4 +203,4 @@ O programa conta com mais de 1.500 horas de aulas online, abordando Introdução
 - [x] 8-1: _ORM - Introdução ao TypeScript_
 - [x] 8-2: _ORM - Tipagem Estática e Generics_
 - [x] 8-3: _ORM - Express com TypeScript_
-- [x] 8-4: _[Projeto - TrybeSmith]()_
+- [ ] 8-4: _[Projeto - TrybeSmith]()_
